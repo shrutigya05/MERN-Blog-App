@@ -1,0 +1,12 @@
+# Node modules
+Backend/node_modules/
+Frontend/node_modules/
+
+# Environment variables
+Backend/config/config.env
+
+# Build
+Frontend/build/
+
+# Logs
+*.log
