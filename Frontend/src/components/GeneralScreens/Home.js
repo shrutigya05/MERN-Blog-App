@@ -18,14 +18,14 @@ const Home = () => {
   const [page, setPage] = useState(1);
   const [pages, setPages] = useState(1);
 
-
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
   useEffect(() => {
     const getStories = async () => {
 
       setLoading(true)
       try {
 
-        const { data } = await axios.get(`/story/getAllStories?search=${searchKey || ""}&page=${page}`)
+        const { data } = await axios.get(`${BASE_URL}/story/getAllStories?search=${searchKey || ""}&page=${page}`)
 
         if (searchKey) {
           navigate({
