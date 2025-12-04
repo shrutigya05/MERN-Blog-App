@@ -4,7 +4,7 @@ import axios from "axios";
 export const AuthContext = React.createContext();
 
 const AuthContextProvider = props => {
-
+  const BASE_URL = process.env.REACT_APP_BACKEND_URL; 
   const [activeUser, setActiveUser] = useState({})
   const [config, setConfig] = useState({
     headers: {
@@ -18,7 +18,7 @@ const AuthContextProvider = props => {
 
     const controlAuth = async () => {
       try {
-        const { data } = await axios.get("/auth/private", config);
+        const { data } = await axios.get(`${BASE_URL}/auth/private`, config);
         setActiveUser(data.user)
       }
       catch (error) {
@@ -30,7 +30,7 @@ const AuthContextProvider = props => {
     };
     controlAuth()
 
-  }, [])
+  }, [BASE_URL])
 
   return (
     <AuthContext.Provider value={{ activeUser, setActiveUser, config, setConfig }}>
