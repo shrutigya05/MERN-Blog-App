@@ -38,12 +38,6 @@ Users can **create, edit, delete, and read blog posts** with authentication, ima
 - Add comments  
 - Fully responsive UI  
 
-### 🎨 **Admin Features**
-*(If admin panel exists; delete this section if not needed)*
-
-- Manage all posts  
-- Manage all users  
-- Remove inappropriate posts or comments  
 
 ---
 
@@ -83,21 +77,4 @@ Users can **create, edit, delete, and read blog posts** with authentication, ima
 
 ![comment](https://github.com/user-attachments/assets/7c7b24dd-c935-44c9-890e-990c0384749f)
 
----
 
-## 📦 Project Structure
-
-Mern-Blog/
-│── Backend/
-│ ├── models/
-│ ├── routes/
-│ ├── controllers/
-│ ├── uploads/
-│ └── server.js
-│
-└── Frontend/
-   ├── src/
-   ├── components/
-   ├── pages/
-   ├── context/
-   └── App.js
