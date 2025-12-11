@@ -1,4 +1,4 @@
-![Home page](https://github.com/user-attachments/assets/fc23cfe4-9663-42a9-b414-d8da7f83641e)# 📝 MERN Blog – Full-Stack Blogging Platform
+# 📝 MERN Blog – Full-Stack Blogging Platform
 
 A full-stack blogging application built using the **MERN stack** (MongoDB, Express, React, Node.js).  
 Users can **create, edit, delete, and read blog posts** with authentication, image upload, categories, and comments support.
